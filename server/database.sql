@@ -6,3 +6,5 @@ CREATE TABLE "todo" (
 	"description" VARCHAR(128),
 	"status" COMPLETE DEFAULT 'Incomplete'
 );
+
+INSERT INTO "todo" ("task", "description") VALUES ('Test', 'This is a test.');
