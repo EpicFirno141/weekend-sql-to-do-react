@@ -15,8 +15,9 @@ router.get('/', (req, res) => {
 });
 
 // POST
-router.get('/', (req, res) => {
+router.post('/', (req, res) => {
     let todo = req.body;
+    console.log(todo);
     let queryText = `INSERT INTO "todo" ("task", "description") VALUES ($1, $2)`;
     pool.query(queryText, [todo.task, todo.description]).then((result) => {
         res.sendStatus(200);
@@ -51,7 +52,7 @@ router.put('/status/:id', (req, res) => {
 });
 
 // DELETE
-router.get('/:id', (req, res) => {
+router.delete('/:id', (req, res) => {
     let todoId = req.params.id;
     let queryText = `DELETE FROM "todo" WHERE "id" = $1`;
     pool.query(queryText, [todoId]).then((result) => {

@@ -19,6 +19,66 @@ header {
     justify-content: center
 }
 
+#addButton {
+    margin-left: 60px;
+    background-color: #58D3F7;
+    border-radius: 3px;
+    padding: 3px 6px 3px 6px;
+    color: white;
+}
+
+#options {
+    padding: 8px;
+    border: 2px solid gray;
+    border-radius: 5px;
+    background-color: #E6E6E6;
+    max-width: 80%;
+    margin: auto;
+}
+
+#taskDescription, #taskName {
+    text-align: center;
+}
+
+#taskDescription {
+    margin-bottom: 20px;
+}
+
+#completeButton {
+    float: left;
+    background-color: #81F79F;
+    border-radius: 6px;
+    padding: 4px;
+}
+
+#deleteButton {
+    float: right;
+    background-color: #F78181;
+    border-radius: 6px;
+    padding: 4px;
+}
+
+#buttonDiv {
+    padding-bottom: 30px;
+}
+
+#todoBox {
+    margin-top: 20px;
+    margin-left: 15px;
+    margin-right: 15px;
+    padding: 4px;
+    border: 4px solid gray;
+    border-radius: 5px;
+    max-width: 20%;
+    background-color: #FE9A2E;
+    box-shadow: 6px 10px #A4A4A4;
+}
+
+#todoList {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 body {
     background-image: url('/images/background.jpeg');
 }

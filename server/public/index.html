@@ -34,7 +34,7 @@
         <h2>Todo List</h2>
       </div>
     </header>
-    <div id="options"><button id="addButton">Add Task</button></div>
+    <div id="options"><button id="addButton" onClick="addButton()">Add Task</button></div>
     <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.
@@ -46,8 +46,15 @@
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
     <div id="todoList">
-      <div id="todoBox"></div>
+      <div id="todoBox">
+        <h3 id="taskName">This is a task</h3>
+        <div id="taskDescription">This is the description</div>
+        <div id="buttonDiv">
+          <button id="completeButton" >Completed</button> <button id="deleteButton">Delete</button>
+        </div>
+      </div>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="scripts/client.js"></script>
   </body>
