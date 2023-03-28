@@ -1,23 +1,91 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+#icon {
+    max-width: 60px;
+    max-height: auto;
+    margin-right: 15px;
 }
 
-.App-header {
-  background-color: #222;
-  height: 70px;
-  padding: 20px;
-  color: white;
+#title {
+    margin-bottom: 0px;
 }
 
-.App-title {
-  font-size: 1.5em;
+header {
+    background-color: #FA8258;
+    padding: 20px 50px 20px 50px;
+    margin: 10px;
+    text-align: center;
+    font-size: 150%;
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center
 }
 
-.App-intro {
-  font-size: large;
+.optionButton {
+    background-color: #58D3F7;
+    border-radius: 3px;
+    padding: 3px 6px 3px 6px;
+    color: white;
+    margin-left: 6%;
+    margin-right: 6%;
+    position: relative;
+    align-self: center;
 }
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+#options {
+    padding: 8px;
+    border: 2px solid gray;
+    border-radius: 5px;
+    background-color: #E6E6E6;
+    max-width: 80%;
+    margin: auto;
+    position: relative;
+}
+
+#taskDescription, #taskName {
+    text-align: center;
+}
+
+#taskDescription {
+    margin-bottom: 20px;
+}
+
+#completeButton {
+    float: left;
+    background-color: #E6E6E6;
+    border-radius: 6px;
+    padding: 4px;
+}
+
+#deleteButton {
+    float: right;
+    background-color: #E6E6E6;
+    border-radius: 6px;
+    padding: 4px;
+}
+
+#buttonDiv {
+    padding-bottom: 30px;
+}
+
+.todoBox {
+    margin-top: 20px;
+    margin-left: 15px;
+    margin-right: 15px;
+    padding: 4px;
+    border: 4px solid;
+    border-radius: 5px;
+    max-width: 20%;
+    background-color: #FA8258;
+    box-shadow: 6px 10px #A4A4A4;
+}
+
+#todoList {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+body {
+    background-image: url('/src/images/background.jpeg');
 }

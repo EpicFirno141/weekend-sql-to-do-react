@@ -7,4 +7,5 @@ CREATE TABLE "todo" (
 	"status" COMPLETE DEFAULT 'Incomplete'
 );
 
-INSERT INTO "todo" ("task", "description") VALUES ('Test', 'This is a test.');
+INSERT INTO "todo" ("task", "description") 
+VALUES ('Finish my assignment', 'The thing I am working on right now.'), ('Sleep tonight', 'The toughest task yet...');
